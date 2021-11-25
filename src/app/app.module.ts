@@ -6,9 +6,11 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ResaltarDirective } from './Directive/resaltar.directive';
+import { FiltrarPipe } from './Pipe/filtrar.pipe';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ResaltarDirective, FiltrarPipe],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
